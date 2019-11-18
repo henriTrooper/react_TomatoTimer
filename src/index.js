@@ -1,12 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'; // propre à react
+import ReactDOM from 'react-dom'; // propre à react
 import './index.css';
-import App from './App';
+import App from './App'; // composant
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// Appel du Composant global <APP>
+ReactDOM.render(<App />, document.getElementById('root')); // permet d'afficher au niveau de id root le component app
 serviceWorker.unregister();
